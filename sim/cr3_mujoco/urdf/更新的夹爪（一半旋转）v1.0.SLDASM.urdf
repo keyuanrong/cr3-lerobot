@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="更新的夹爪（一半旋转）v1.0.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="6.85221855992735E-05 0.00300506541580964 0.0285533608692841"
+        rpy="0 0 0" />
+      <mass
+        value="5.02480920448184" />
+      <inertia
+        ixx="0.00666958114537919"
+        ixy="-4.99608236979039E-07"
+        ixz="-1.26835438879039E-06"
+        iyy="0.00584115414422138"
+        iyz="-8.31079606591726E-05"
+        izz="0.00882636424755553" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-0.00394441217062119 3.66733676391146E-05 0.0734439501083228"
+        rpy="0 0 0" />
+      <mass
+        value="10.0955987179028" />
+      <inertia
+        ixx="0.0152525548859726"
+        ixy="1.25057032947325E-05"
+        ixz="0.00197804972245726"
+        iyy="0.0155945953498686"
+        iyz="-3.37231918144003E-06"
+        izz="0.0141653659346607" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="7.69363377688403E-05 0.000302533553753315 0.065"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="-0.0741752343141683 -1.41282862897163E-05 0.129232505286091"
+        rpy="0 0 0" />
+      <mass
+        value="26.183938269223" />
+      <inertia
+        ixx="0.0445233520164798"
+        ixy="-3.26853219530061E-06"
+        ixz="0.000659378810070619"
+        iyy="0.0486879884674402"
+        iyz="1.23527903399271E-05"
+        izz="0.0346935841892653" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="revolute">
+    <origin
+      xyz="-0.0590002707759742 0 0.0697999999587383"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.0522018200536015 1.21074217053485E-06 0.121124381348978"
+        rpy="0 0 0" />
+      <mass
+        value="16.8666184464014" />
+      <inertia
+        ixx="0.153033701271701"
+        ixy="4.10873147276196E-07"
+        ixz="0.00850167925770642"
+        iyy="0.156931642965015"
+        iyz="9.2648038620683E-07"
+        izz="0.0197017576009723" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="revolute">
+    <origin
+      xyz="-0.00360000000000005 0 0.274008212697805"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="-0.0461256816722646 1.2653017335551E-06 -0.00345159587811961"
+        rpy="0 0 0" />
+      <mass
+        value="6.48533969016381" />
+      <inertia
+        ixx="0.00765260336756786"
+        ixy="3.17122167215653E-08"
+        ixz="0.0010273013637534"
+        iyy="0.00772982638107039"
+        iyz="2.93392792730973E-08"
+        izz="0.00610923547860754" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="revolute">
+    <origin
+      xyz="-0.0167 0 0.229990512799193"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="0.00333134176644048 -2.03015121158501E-07 0.0461311047575832"
+        rpy="0 0 0" />
+      <mass
+        value="6.49625678183132" />
+      <inertia
+        ixx="0.00611803261470623"
+        ixy="7.28832622509885E-08"
+        ixz="0.00103099982540277"
+        iyy="0.00776562624263479"
+        iyz="1.17356621611127E-08"
+        izz="0.00768791051044422" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="revolute">
+    <origin
+      xyz="-0.0489999380118297 0 0.0670000620559024"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="-0.01535 -0.0796253333193645 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.634071594787973" />
+      <inertia
+        ixx="0.000492679192291505"
+        ixy="-2.05840727175592E-20"
+        ixz="2.65696564224512E-19"
+        iyy="0.000342700673028841"
+        iyz="-5.30783522277243E-20"
+        izz="0.000208492146415191" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="revolute">
+    <origin
+      xyz="-0.0673000619881703 0 0.0488012124883614"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_base">
+    <inertial>
+      <origin
+        xyz="-0.0525124309036244 8.31787860905153E-05 0.000179501010934002"
+        rpy="0 0 0" />
+      <mass
+        value="0.717637530126163" />
+      <inertia
+        ixx="0.000410461450405349"
+        ixy="1.97326433273756E-08"
+        ixz="1.19750041484873E-08"
+        iyy="0.000517064315615614"
+        iyz="1.87522500739624E-05"
+        izz="0.000402393983724621" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/gripper_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/gripper_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_joint"
+    type="fixed">
+    <origin
+      xyz="-0.04770344 -1.42449850634441E-05 8.99392959963219E-05"
+      rpy="0 0 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="gripper_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_Link1">
+    <inertial>
+      <origin
+        xyz="-0.00700744244341194 -0.00901059701971539 0.00739791864736694"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844595654791462" />
+      <inertia
+        ixx="2.86688689237154E-05"
+        ixy="-1.35297273822972E-06"
+        ixz="6.91694077395783E-06"
+        iyy="3.1807603382932E-05"
+        iyz="1.61385622521548E-06"
+        izz="8.30229692190674E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_joint1"
+    type="revolute">
+    <origin
+      xyz="-0.08189656 0.00272089524104584 0.0256503801346519"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="Left_Link1" />
+    <axis
+      xyz="0 -0.987688340595142 -0.156434465040207" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_static1">
+    <inertial>
+      <origin
+        xyz="-0.026731787041842 0.00222482362911726 -0.0141391118843792"
+        rpy="0 0 0" />
+      <mass
+        value="0.081798281899798" />
+      <inertia
+        ixx="3.57744923705614E-06"
+        ixy="4.51657275362611E-07"
+        ixz="-2.85152633127374E-06"
+        iyy="1.63816116901597E-05"
+        iyz="-1.04570702451501E-07"
+        izz="1.70253725758472E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_static1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_static1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_static1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.02693137046528 -0.0137583661684634 0.0440374686515492"
+      rpy="0 0 0" />
+    <parent
+      link="Left_Link1" />
+    <child
+      link="Left_static1" />
+    <axis
+      xyz="0 -0.987688340595141 -0.15643446504021" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_link2">
+    <inertial>
+      <origin
+        xyz="-0.0107299717053558 -0.00946276361594048 0.0169167177045149"
+        rpy="0 0 0" />
+      <mass
+        value="0.0467786175659675" />
+      <inertia
+        ixx="1.20747497911926E-05"
+        ixy="-8.4371999422975E-07"
+        ixz="5.32747540424146E-06"
+        iyy="1.2584581043282E-05"
+        iyz="1.0243057315103E-06"
+        izz="6.2788629854597E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Left_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_joint2"
+    type="revolute">
+    <origin
+      xyz="-0.10189656 0.00483276051908862 0.0123165875366174"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="Left_link2" />
+    <axis
+      xyz="0 -0.987688340595141 -0.156434465040208" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_Link1">
+    <inertial>
+      <origin
+        xyz="-0.00700744244340618 -0.00422442674425921 -0.0094941404789084"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844595654791463" />
+      <inertia
+        ixx="2.86688689237734E-05"
+        ixy="1.35297273822333E-06"
+        ixz="-6.91694077391052E-06"
+        iyy="3.18076033829438E-05"
+        iyz="1.61385622522479E-06"
+        izz="8.30229692186397E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_joint"
+    type="revolute">
+    <origin
+      xyz="-0.08189655999999 0.0105426184930593 -0.0237340368951251"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="Right_Link1" />
+    <axis
+      xyz="0 -0.987688340595141 -0.156434465040209" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_static1">
+    <inertial>
+      <origin
+        xyz="-0.0267318191217411 -0.00222483250951787 0.0141391107295132"
+        rpy="0 0 0" />
+      <mass
+        value="0.0817982814192898" />
+      <inertia
+        ixx="3.5774491641234E-06"
+        ixy="-4.51656756741569E-07"
+        ixz="2.85152313504305E-06"
+        iyy="1.63816118671217E-05"
+        iyz="-1.04571357072515E-07"
+        izz="1.70253723717153E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_static1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_static1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_static1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.02693137046529 0.000523342404485386 -0.0461336904830683"
+      rpy="0 0 0" />
+    <parent
+      link="Right_Link1" />
+    <child
+      link="Right_static1" />
+    <axis
+      xyz="0 0.987688340595141 0.15643446504021" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_Link2">
+    <inertial>
+      <origin
+        xyz="-0.0107299717053571 -0.00377226014803451 -0.0190129395360521"
+        rpy="0 0 0" />
+      <mass
+        value="0.0467786175659648" />
+      <inertia
+        ixx="1.20747497911908E-05"
+        ixy="8.43719994229793E-07"
+        ixz="-5.32747540424156E-06"
+        iyy="1.25845810432811E-05"
+        iyz="1.02430573151009E-06"
+        izz="6.27886298546018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://更新的夹爪（一半旋转）v1.0.SLDASM/meshes/Right_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_joint2"
+    type="revolute">
+    <origin
+      xyz="-0.10189656 0.00843075321501338 -0.0104002442970708"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="Right_Link2" />
+    <axis
+      xyz="0 -0.987688340595141 -0.156434465040211" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
